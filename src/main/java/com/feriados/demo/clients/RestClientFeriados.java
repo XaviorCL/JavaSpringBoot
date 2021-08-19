@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface RestClientFeriados {
 
-    Mono<FeriadoDto> getFeriadosFilterYearAndMonth();
+    Mono<FeriadoDto[]> getFeriadosFilterYearAndMonth(long year, long month);
+    Mono<FeriadoDto[]> getFeriadoFilterYearMonthAndDay(long year, long month, long day);
 
 }
